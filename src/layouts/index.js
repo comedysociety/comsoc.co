@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import Link from "gatsby-link"
 import Helmet from "react-helmet"
+import Logo from '../components/Logo';
 
 import "../css/typography.css"
 
@@ -14,15 +15,14 @@ export default class Template extends React.Component {
     return (
       <div>
         <Helmet
-          title="Gatsby Default Starter"
+          title="Sussex Comedy Society"
           meta={[
-            { name: "description", content: "Sample" },
-            { name: "keywords", content: "sample, something" },
+            { name: "description", content: "The Sussex Comedy Society" },
           ]}
         />
         <div
           style={{
-            background: `rebeccapurple`,
+            background: '#50E3C2',
             marginBottom: `1.45rem`,
           }}
         >
@@ -33,17 +33,7 @@ export default class Template extends React.Component {
               padding: `1.45rem 1.0875rem`,
             }}
           >
-            <h1 style={{ margin: 0 }}>
-              <Link
-                to="/"
-                style={{
-                  color: "white",
-                  textDecoration: "none",
-                }}
-              >
-                Gatsby
-              </Link>
-            </h1>
+            <Logo />
           </div>
         </div>
         <div
